@@ -2,13 +2,16 @@
 title: "「Claude Code」を使ってみた：環境構築から基本の操作まで初心者向けに解説"
 emoji: "😊"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: [claudecode]
+topics: [生成ai, claudecode]
 published: false
 publication_name: "secondselection"
 
 ---
 
 ## はじめに
+
+生成AI初心者の私が、先日「Claude Code」を初めて使ってみました。正直なところ、コマンド操作は難しいイメージがあったのですが、いざ触ってみると、驚くほど直感的で使いやすかったです。
+本記事では、AIツールにあまり馴染みがない方でも「これならできそう」と感じてもらえるよう、インストールから基本の操作まで、私の実体験をベースに解説していきます。
 
 ## Claude Codeとは
 
