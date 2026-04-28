@@ -52,12 +52,11 @@ npm install -g @anthropic-ai/claude-code
 例えば、以下のようなファイル構成となっているソースコードについて、
 既存ソースコードの解析と概要ドキュメントの生成の2つを実施してみます。
 
-```plaintext
+```markdown
+**フォルダ構成:**
 src/
  └─ data_processor.py
 ```
-
-:::details data_processor.py
 
 ```python:data_processor.py
 import json
@@ -91,8 +90,6 @@ def p(f):
 print(p('data.json'))
 ```
 
-:::
-
 ### 例1. 既存ソースコードの解析
 
 Claude Codeから以下の内容を指示します。
@@ -103,8 +100,6 @@ Claude Codeから以下の内容を指示します。
 ```
 
 すると、概要、処理の流れ、ファイル読み込みに必要なJSONデータの例を教えてもらえます。
-
-:::details 例1.の実行結果
 
 ```markdown
 **出力プロンプト:**
@@ -158,8 +153,6 @@ JSONファイルの読み込みとファイル存在チェックに使う標準�
 
 ```
 
-:::
-
 ### 例2. 既存ソースコードから読み取ったドキュメントの自動生成
 
 今度は、data_processor.pyの関数 `p(f)` の仕様を詳細設計書にまとめてもらう指示をしてみます。
@@ -170,8 +163,6 @@ JSONファイルの読み込みとファイル存在チェックに使う標準�
 ```
 
 すると、以下のように関数の仕様をまとめたドキュメントを作成することも出来ます。
-
-:::details 例2.の実行結果
 
 ````markdown:data_processor.md
 # data_processor モジュール仕様書
@@ -273,8 +264,6 @@ result = p('data.json')
 
 ````
 
-:::
-
 ## 【応用】サブエージェントでタスクを分身させる方法
 
 ここからがClaude Codeの真骨頂です。  
@@ -301,8 +290,6 @@ claudeのCLIで実行する際に、サブエージェントのキーワード�
 ```
 
 すると、リファクタリングが行われて、先ほどのソースコードが以下のように修正されます。
-
-:::details サブエージェント呼び出しにより、リファクタリングを行ったソースコード
 
 ```python:data_processor.py
 import json
@@ -331,8 +318,6 @@ if __name__ == '__main__':
     print(process_file('data.json'))
 
 ```
-
-:::
 
 ## 実際に使ってみて分かった「よかった点」と「注意点」
 
