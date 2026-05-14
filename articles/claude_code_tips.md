@@ -3,9 +3,9 @@ title: "「Claude Code」を使ってみた：環境構築から基本の操作�
 emoji: "😊"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [生成ai, claude, claudecode]
-published: false
+published: true
+published_at: 2026-05-18 06:00
 publication_name: "secondselection"
-
 ---
 
 ## はじめに
